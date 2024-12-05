@@ -1,0 +1,24 @@
+[project]
+name = "heineken-ds-case"
+version = "0.1.0"
+description = "Previsão da cor da cerveja produzida"
+readme = "README.md"
+requires-python = "~=3.12"
+dependencies = [
+    "loguru>=0.7.2",
+    "matplotlib>=3.9.3",
+    "plotly>=5.24.1",
+    "python-dotenv>=1.0.1",
+    "scikit-learn>=1.5.2",
+    "seaborn>=0.13.2",
+    "setuptools>=75.6.0",
+    "streamlit>=1.40.2",
+    "typer>=0.15.1",
+    "ydata-profiling>=4.12.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.5",
+]
