@@ -1,5 +1,7 @@
 # Data
-.csv
+*.csv
+*.parquet
+mlruns
 # Mac OS-specific storage files
 .DS_Store
 
