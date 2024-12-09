@@ -28,3 +28,5 @@ repos:
     - id: uv-lock
     - id: pip-compile
       args: [pyproject.toml, -o, requirements.txt]
+    - id: pip-compile
+      args: [pyproject.toml, -o, requirements-dev.txt, --only-dev, --no-editable, --no-hashes]

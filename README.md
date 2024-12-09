@@ -61,9 +61,9 @@ Esse projeto foi criado usando o gerenciador de dependências [uv](https://docs.
     uv sync
     ```
 
-    2.2 Usando o `pip`:
+    2.2 Crie um ambiente virtual, instale as dependências usando o `pip`:
     ```bash
-    pip install -e .
+    pip install -r requirements-dev.txt
     ```
 
 3. Coloque o arquivo `dataset.csv` na pasta `data/raw`
