@@ -51,6 +51,7 @@ O objetivo deste projeto é analisar os dados da empresa e desenvolver um modelo
 ```
 
 ## Configurando ambiente 🚀
+Esse projeto foi criado usando o gerenciador de dependências [uv](https://docs.astral.sh/uv/), com a versão Python 3.11.
 
 1. Clone o repositório
 2. Instale as dependências e crie o ambiente virtual
