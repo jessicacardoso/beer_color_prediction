@@ -55,9 +55,17 @@ Esse projeto foi criado usando o gerenciador de dependências [uv](https://docs.
 
 1. Clone o repositório
 2. Instale as dependências e crie o ambiente virtual
-```bash
-uv sync
-```
+
+    2.1 Usando o `uv`:
+    ```bash
+    uv sync
+    ```
+
+    2.2 Usando o `pip`:
+    ```bash
+    pip install -e .
+    ```
+
 3. Coloque o arquivo `dataset.csv` na pasta `data/raw`
 4. Abra os notebooks na pasta `notebooks` e executar as células usando o ambiente virtual criado pelo `uv`
 
