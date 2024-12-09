@@ -1,4 +1,6 @@
 from pathlib import Path
+
+import joblib
 import pandas as pd
 import typer
 from loguru import logger
@@ -6,9 +8,11 @@ from sklearn.compose import TransformedTargetRegressor
 from sklearn.ensemble import ExtraTreesRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import RobustScaler, StandardScaler
-from beer_color_prediction.config import MODELS_DIR, PROCESSED_DATA_DIR
-import joblib
+from sklearn.preprocessing import RobustScaler
+from sklearn.preprocessing import StandardScaler
+
+from beer_color_prediction.config import MODELS_DIR
+from beer_color_prediction.config import PROCESSED_DATA_DIR
 
 app = typer.Typer()
 

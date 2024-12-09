@@ -1,10 +1,12 @@
+import re
 from pathlib import Path
+
 import pandas as pd
 import typer
-import re
 from loguru import logger
 
-from beer_color_prediction.config import PROCESSED_DATA_DIR, RAW_DATA_DIR
+from beer_color_prediction.config import PROCESSED_DATA_DIR
+from beer_color_prediction.config import RAW_DATA_DIR
 
 app = typer.Typer()
 
