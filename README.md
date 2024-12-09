@@ -61,7 +61,7 @@ Esse projeto foi criado usando o gerenciador de dependências [uv](https://docs.
     uv sync
     ```
 
-    2.2 Crie um ambiente virtual, instale as dependências usando o `pip`:
+    2.2 Ou crie um ambiente virtual e instale as dependências usando o `pip`:
     ```bash
     pip install -r requirements-dev.txt
     ```
