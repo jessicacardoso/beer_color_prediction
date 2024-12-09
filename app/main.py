@@ -5,9 +5,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from pydantic import Field
 
-from beer_color_prediction.config import MODELS_DIR
-
-
 app = FastAPI(
     title="Beer Color Prediction API",
     description="API para predição da cor da cerveja",
@@ -56,15 +53,19 @@ class Prediction(BaseModel):
     )
 
 
+class Response(BaseModel):
+    color: float
+
+
 class Message(BaseModel):
     message: str
 
 
 # global apenas para simplicidade
-model = joblib.load(f"{MODELS_DIR}/model.joblib")
+model = joblib.load("models/model.joblib")
 
 
-@app.post("/predict", status_code=HTTPStatus.OK)
+@app.post("/predict", status_code=HTTPStatus.OK, response_model=Response)
 def predict_color(prediction: Prediction):
     """Realiza a predição da cor da cerveja"""
     X = prediction.model_dump()
